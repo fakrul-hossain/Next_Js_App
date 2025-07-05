@@ -38,10 +38,10 @@ export default function RootLayout({ children }) {
           <a href="mailto:dev.fakrulhossain@gmail.com" className="hover:text-indigo-600 transition">
             Email
           </a>
-          <a href="https://github.com/fakrulhossain" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition">
+          <a href="https://github.com/fakrul-hossain" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition">
             GitHub
           </a>
-          <a href="https://www.linkedin.com/in/fakrul-hossain-4b7b8b260/" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition">
+          <a href="https://www.linkedin.com/fakrul-hossain/" target="_blank" rel="noopener noreferrer" className="hover:text-indigo-600 transition">
             LinkedIn
           </a>
         </div>

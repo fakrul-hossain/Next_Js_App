@@ -5,7 +5,7 @@ import React from 'react';
 
 const AboutPage = () => {
     const router = useRouter()
-    const isLoggedIN = false;
+    const isLoggedIN = true;
     const handleNavigation = () =>{
         if(isLoggedIN){
             router.push("about/my-ai-thoughts")

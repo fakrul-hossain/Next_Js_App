@@ -6,7 +6,6 @@ import React from 'react';
 
 const Naavbar = () => {
   const pathname = usePathname();
-
   const navItems = [
     { href: '/', label: 'Home' },
     { href: '/about', label: 'About' },
@@ -14,6 +13,10 @@ const Naavbar = () => {
     { href: '/contract', label: 'Contact' },
   ];
 
+
+
+  if(!pathname.includes('dashboard'))
+{
   return (
     <nav className="bg-white shadow-md px-6 py-4 flex justify-between items-center">
       <div className="text-xl font-bold text-indigo-600">
@@ -37,6 +40,12 @@ const Naavbar = () => {
       </div>
     </nav>
   );
+}
+else{
+    return <></>
+}
+
+
 };
 
 export default Naavbar;
