@@ -15,6 +15,9 @@ const Naavbar = () => {
         <Link href="/about" className="text-gray-700 hover:text-indigo-600 font-medium">
           About
         </Link>
+        <Link href="/Services" className="text-gray-700 hover:text-indigo-600 font-medium">
+          Services
+        </Link>
         <Link href="/contact" className="text-gray-700 hover:text-indigo-600 font-medium">
           Contact
         </Link>
