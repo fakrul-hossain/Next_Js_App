@@ -1,13 +1,27 @@
+"use client"
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import React from 'react';
 
 const AboutPage = () => {
+    const router = useRouter()
+    const isLoggedIN = false;
+    const handleNavigation = () =>{
+        if(isLoggedIN){
+            router.push("about/my-ai-thoughts")
+        } else{
+            router.push('/')
+        }
+    }
   return (
     <div className="max-w-5xl mx-auto px-4 py-12">
-        <div className="text-center mb-8">
-            <Link href="about/my-ai-thoughts" className="text-purple-700 hover:text-indigo-600 font-medium text-2xl">
-          My thoughts on artificial intelligence
+        <div className="text-center flex flex-col mb-8">
+            <Link onClick={handleNavigation} href="about/my-ai-thoughts" className="text-purple-700 hover:text-indigo-600 font-medium text-2xl">
+          My thoughts on artificial intelligence (without login)
         </Link>
+            <button onClick={handleNavigation} href="about/my-ai-thoughts" className="text-purple-700 cursor-pointer hover:text-indigo-600 font-medium text-2xl">
+          My thoughts on artificial intelligence
+        </button>
         </div>
       <h1 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-10">
         About Me
